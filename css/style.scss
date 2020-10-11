@@ -571,10 +571,12 @@ body {
                         max-width: 400px;
                     }
                     @media (max-width:846px) {
+                        max-width: 340px;
                          display: flex;
+                         flex-wrap: wrap;
                     }
                     @media(max-width:768px){
-                        width: 474px;
+                        max-width: 474px;
                         display: flex;
                         flex-wrap: wrap;
                     }
@@ -616,6 +618,11 @@ body {
                         letter-spacing: $lettersapcing2px;
                         @media (max-width:952px){
                             max-width: 300px;
+                        }
+                        @media (max-width:846px){
+                            display: flex;
+                            flex-wrap: wrap;
+                            
                         }
 
                         a {

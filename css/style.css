@@ -671,15 +671,18 @@ body {
 
 @media (max-width: 846px) {
   .campaign-content .container .row .campaign-box .campaign-text {
+    max-width: 340px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 @media (max-width: 768px) {
   .campaign-content .container .row .campaign-box .campaign-text {
-    width: 474px;
+    max-width: 474px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -728,6 +731,16 @@ body {
 @media (max-width: 952px) {
   .campaign-content .container .row .campaign-box .campaign-text .text-context {
     max-width: 300px;
+  }
+}
+
+@media (max-width: 846px) {
+  .campaign-content .container .row .campaign-box .campaign-text .text-context {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
