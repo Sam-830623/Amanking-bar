@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+                .swiper-slide-list {
+                display: flex;
+                .swiper-slide-list-content {
+                    width: 255px;
+                    height: 386px;
+                    // background-color: blue;
+                    display: flex;
+                    flex-wrap: wrap;
+                    position: relative;
+                    padding-right: 30px;
+                    //想辦法讓所有圖片寬度一樣大 高度不一定
+                    // .swiper-img{
+
+                    // }
+                    @media (max-width: 768px) {
+                    }
+
+                    img {
+                        width: 105px;
+                        height: 203px;
+                        position: absolute;
+                        top: 0;
+                        left: 60px;
+                        margin: auto;
+                    }
+                    // 圖片不符合的修改
+                    #screwdriver {
+                        width: 150px;
+                        height: 203px;
+                        position: absolute;
+                        left: 40px;
+                    }
+                    #oldfashioned,
+                    #manhattan {
+                        width: 155px;
+                        height: 203px;
+                        position: absolute;
+                        left: 35px;
+                    }
+                    #mintjulep {
+                        width: 90px;
+                        height: 203px;
+                        position: absolute;
+                        left: 60px;
+                    }
+                    #margarita,
+                    #sunrise,
+                    #matador {
+                        width: 140px;
+                        height: 203px;
+                        position: absolute;
+                        left: 50px;
+                    }
+                    #sunset {
+                        width: 80px;
+                        height: 203px;
+                        position: absolute;
+                        left: 80px;
+                    }
+                    #evian,
+                    #sanwater,
+                    #redbull {
+                        width: 80px;
+                        height: 203px;
+                        position: absolute;
+                        left: 70px;
+                    }
+                    #corona,
+                    #tw18beer,
+                    #applesider {
+                        width: 65px;
+                        height: 203px;
+                        position: absolute;
+                        left: 75px;
+                    }
+
+                    .swiper-whitebox {
+                        width: 255px;
+                        height: 140px;
+                        background-color: $bg_white-color;
+                    }
+                    .swiper-bluebox {
+                        width: 255px;
+                        height: 236px;
+                        background-color: #144c59;
+                        font-size: 18px;
+                        color: $font-white;
+                        padding: 70px 6px 0;
+                        font-family: $font-family-all-word;
+                    }
+                    .other-bluebox {
+                        padding-top: 90px;
+                    }
+                }
+                .old-number {
+                    //看看能不能不用margin 用align
+                    // display: flex;
+                    // align-content: flex-end;
+                    margin-top: 98px;
+                }
+                .even-number {
+                }
+            }
+    </Style>
+</head>
+
+<body>
+
+    <div id="gin-swiper" class="swiper-slide-list">
+        <div class="swiper-slide-list-content old-number">
+            <div class="swiper-img">
+                <img w-100 src="./img/04-aman-menu/02-調酒/01-gin/martini.png" alt="">
+            </div>
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>MARGARITA</h4>
+                <li>瑪格麗特</li>
+                <br>
+                <li>Dry gin + 辛口苦艾酒</li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content even-number">
+            <img src="./img/04-aman-menu/02-調酒/01-gin/gimlet.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>GIMLET</h4>
+                <li>螺絲鑽</li>
+                <br>
+                <li>Dry gin + Lime juice</li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content old-number">
+            <img src="./img/04-aman-menu/02-調酒/01-gin/singapore sling.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>SINGAPORE SLING </h4>
+                <li>新加坡司令</li>
+                <p>
+                    <li>Dry gin + Cherry brandy</li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content even-number">
+            <img width="500px" src="./img/04-aman-menu/02-調酒/01-gin/long island iced tea.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>LONG ISLAND ICED TEA</h4>
+                <li class="my-1">長島冰茶</li>
+                <li>Dry gin + vodka + light rum + Tequlia + white curacao
+                </li>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="vodka-swiper" class="swiper-slide-list">
+        <div class="swiper-slide-list-content old-number">
+            <img id="screwdriver" src="./img/04-aman-menu/02-調酒/02-vodka/screwdriver.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>SCREWDRIVER</h4>
+                <li>螺絲起子</li>
+                <br>
+                <li>Vodka + 柳橙汁</li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content even-number">
+            <img src="./img/04-aman-menu/02-調酒/02-vodka/bloody mary.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>BLOODY MARY</h4>
+                <li>血腥瑪麗</li>
+                <p>
+                    <li>Vodka + 蕃茄汁 + 檸檬汁 +
+                        檸檬片 + 胡椒 + Tabasco辣
+                        椒汁等
+                    </li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content old-number">
+            <img src="./img/04-aman-menu/02-調酒/02-vodka/chichi.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h5>CHI-CHI </h5>
+                <li>奇奇</li>
+                <br>
+                <li>Vodka + 鳳型汁 +
+                    Coconut Milk + 鳳梨片 + 紅櫻桃
+                </li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content even-number">
+            <img class="evennumber-img" src="./img/04-aman-menu/02-調酒/02-vodka/white russian.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>WHITE RUSSIAN</h4>
+                <li>白色俄羅斯</li>
+                <li>Vodka + Coffee liquer + Fresh creame
+                </li>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="whisky-swiper" class="swiper-slide-list">
+        <div class="swiper-slide-list-content old-number">
+            <img id="manhattan" class="oldnumber-img" src="./img/04-aman-menu/02-調酒/03-whisky/Manhattan.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>MANHATTAN</h4>
+                <li>曼哈頓</li>
+                <p>
+                    <li>Rye whisky + Sweet vermouth + Angostura bitters
+                    </li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content even-number">
+            <img id="oldfashioned" src="./img/04-aman-menu/02-調酒/03-whisky/old-fashioned.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>OLD-FASHIONED</h4>
+                <li>老式威士忌</li>
+                <br>
+                <li>Rye or bourbon whisky + 苦酒Angostura bitters + 方糖
+
+                </li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content old-number">
+            <img id="mintjulep" class="evennumber-img" src="./img/04-aman-menu/02-調酒/03-whisky/mint julep.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h5>MINT JULEP</h5>
+                <li>薄荷冰酒</li>
+                <br>
+                <li>波本威士忌bourbon + 薄荷葉
+                </li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content even-number">
+            <img width="500px" src="./img/04-aman-menu/02-調酒/03-whisky/rusty nail.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>RUSTY NAIL</h4>
+                <li>銹釘</li>
+                <li>威士忌scotch + 吉寶液dramnbuie
+                </li>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="tequlia-swiper" class="swiper-slide-list">
+        <div class="swiper-slide-list-content old-number">
+            <img id="margarita" src="./img/04-aman-menu/02-調酒/04tequlia/Margarita.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>MARGARITA</h4>
+                <li>瑪格麗特</li>
+                <br>
+                <li>Tequila + 君度橙皮酒Cointreau + lime juice + 鹽
+                </li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content even-number">
+            <img id="sunrise" class="oldnumber-img" src="./img/04-aman-menu/02-調酒/04tequlia/_tequila-sunrise.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>TEQULIA SUNRISE</h4>
+                <li>龍舌蘭日出</li>
+                <br>
+                <li>Tequlia + 柳橙汁 + 紅石
+                    榴糖漿 + 柳橙片
+                </li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content old-number">
+            <img id="sunset" src="./img/04-aman-menu/02-調酒/04tequlia/tequlia sunset.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h5>TEQULIA SUNSET</h5>
+                <li>龍舌蘭日落</li>
+                <br>
+                <li>Tequlia + 檸檬汁 + 紅
+                    石榴糖漿 + 檸檬片
+
+                </li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content even-number">
+            <img id="matador" class="evennumber-img" src="./img/04-aman-menu/02-調酒/04tequlia/Matador.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>MATADOR</h4>
+                <li>鬥牛士</li>
+                <br>
+                <li>Tequlia + 鳳梨汁 + Lime juice
+                </li>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="rum-swiper" class="swiper-slide-list">
+        <div class="swiper-slide-list-content old-number">
+            <img class="oldnumber-img" src="./img/04-aman-menu/02-調酒/05-rum/cuba libre.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>CUBA-LIBRE</h4>
+                <li>自由古巴</li>
+                <br>
+                <li>Light rum無色萊姆酒 + Lime juice + 可樂
+                </li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content even-number">
+            <img class="evennumber-img" src="./img/04-aman-menu/02-調酒/05-rum/pina colada.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>PINA COLADA</h4>
+                <li>鳳梨園</li>
+                <p>
+                    <li>無色蘭姆酒Light rum + 鳳梨汁 +
+                        椰奶coconut cream + 紅櫻
+                    </li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content old-number">
+            <img src="./img/04-aman-menu/02-調酒/05-rum/Daiquiri.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h5>DAIQUIRI</h5>
+                <li>黛克瑞雞尾酒</li>
+                <br>
+                <li>無色蘭姆酒Light rum + Lime juice + 砂糖
+                </li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content even-number">
+            <img width="500px" src="./img/04-aman-menu/02-調酒/05-rum/MAI-TAI.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>MAI-TAI</h4>
+                <li>邁太</li>
+                <li>Light Rum + Qrange Curacao + 鳳梨汁 + 柳橙汁 + 檸檬汁+ DarkRum
+                </li>
+            </div>
+        </div>
+    </div>
+
+    <div id="brandy-swiper" class="swiper-slide-list">
+        <div class="swiper-slide-list-content old-number">
+            <img src="./img/04-aman-menu/02-調酒/06-brandy/side car.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>SIDE CAR</h4>
+                <li>加掛機車</li>
+                <br>
+                <li>Brandy + Cointreau君度橙皮酒 + 檸檬汁
+                </li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content even-number">
+            <img class="oldnumber-img" src="./img/04-aman-menu/02-調酒/06-brandy/Alexander.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>ALEXANDER</h4>
+                <li>亞歷山大</li>
+                <br>
+                <li>Brandy + 棕色可可酒 + 鮮奶油
+                </li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content old-number">
+            <img class="evennumber-img" src="./img/04-aman-menu/02-調酒/06-brandy/Horse neck.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h5>HORSE NECK</h5>
+                <li>馬頸</li>
+                <br>
+                <li>Brandy + 薑汁汽水Gingerale + 檸檬皮
+
+                </li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content even-number">
+            <img width="500px" src="./img/04-aman-menu/02-調酒/06-brandy/between the sheets.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox">
+                <h4>BETWEEN THE SHEETS</h4>
+                <li>床第之間</li>
+                <p>
+                    <li>Bandy + White rum +white curacao無色橙皮酒 + 檸檬汁
+                    </li>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="noalcohic-swiper" class="swiper-slide-list">
+        <div class="swiper-slide-list-content old-number">
+            <img id="evian" src="./img/04-aman-menu/03-無酒精飲料/WATER.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox other-bluebox">
+                <h4>EVAIN WATER</h4>
+                <li>愛維養天然礦泉水</li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content even-number">
+            <img id="sanwater" src="./img/04-aman-menu/03-無酒精飲料/soda water.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox other-bluebox">
+                <h4>SAN PELLEGRINO SPARKLING WATER</h4>
+                <li>聖沛黎洛天然氣泡礦泉水 </li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content old-number">
+            <img class="oldnumber-img" src="./img/04-aman-menu/03-無酒精飲料/cola.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox other-bluebox">
+                <h5>COLA</h5>
+                <li>可樂</li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content even-number">
+            <img id="redbull" class="evennumber-img" src="./img/04-aman-menu/03-無酒精飲料/紅牛.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox other-bluebox">
+                <h4>REDBULL</h4>
+                <li>紅牛</li>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="beer-swiper" class="swiper-slide-list">
+        <div class="swiper-slide-list-content old-number">
+            <img class="oldnumber-img" src="./img/04-aman-menu/04-beer/百威.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox other-bluebox">
+                <h4>BUDWEISER</h4>
+                <li>百威</li>
+                <br>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content even-number">
+            <img id="tw18beer" class="oldnumber-img" src="./img/04-aman-menu/04-beer/18生啤.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox other-bluebox">
+                <h4>TW18-BBER</h4>
+                <li>台灣18生啤</li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content old-number">
+            <img id="corona" class="evennumber-img" src="./img/04-aman-menu/04-beer/可樂娜.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox other-bluebox">
+                <h5>CORONA</h5>
+                <li>可樂娜</li>
+            </div>
+        </div>
+        <div class="swiper-slide-list-content even-number">
+            <img id="applesider" width="500px" src="./img/04-aman-menu/04-beer/夏日蜜蘋果啤酒.png" alt="">
+            <div class="swiper-whitebox">
+            </div>
+            <div class="swiper-bluebox other-bluebox">
+                <h4>SOMERSBY CIDER</h4>
+                <li>夏日蜜蘋果啤酒</li>
+                <br>
+            </div>
+        </div>
+    </div>x
+
+
+
+
+
+</body>
+
+</html>

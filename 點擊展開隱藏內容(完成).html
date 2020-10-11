@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+        }
+
+        .text {
+            border: 1px solid blue;
+            padding: 15px;
+        }
+
+        .active {
+            background-color: aquamarine;
+        }
+
+        .display_none {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="text display_none">提示: 1.點擊按鈕後透過ClassList.add和ClassList.remove做到按鈕變色與文字框展開
+        2."如果"再次點擊時,按鈕的class有active的話,就把active移除,且文字框新增"display_none"的class;
+        如果按鈕沒有'active'的class,就加上acitve,且文字框移除"display_none"的class</div>
+   
+    <script>
+        // 提示: 1.點擊按鈕後透過ClassList.add和ClassList.remove做到按鈕變色與文字框展開 2."如果"再次點擊時,按鈕的class有active的話,就把active移除,且文字框新增"display_none"的class; 如果按鈕沒有'active'的class,就加上acitve,且文字框移除"display_none"的class
+        var box = document.querySelector('.box')
+        var text = document.querySelector('.text')
+        var active = document.querySelector('.box').classList.contains('active')
+        
+        box.onclick = function () {
+            var active = document.querySelector('.box').classList.contains('active')
+            if ( active == false) {
+                box.classList.add('active')
+                text.classList.remove('display_none')
+
+            } else {
+                box.classList.remove('active')
+                text.classList.add('display_none')
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
