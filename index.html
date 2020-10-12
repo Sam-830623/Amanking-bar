@@ -126,7 +126,7 @@
                     <div class="container-nav ">
                         <!-- display;none控制 裡面放icon-->
                         <div class="nav-a text-decoration-none">
-                            <a href="#about" class="text-decoration-none">About</a>
+                            <a href="#about" class="text-decoration-none  Underline From Left">About</a>
                             <a href="#campaign" class="text-decoration-none">Campaign</a>
                             <a href="#menu" class="text-decoration-none">Menu</a>
                             <a href="#story" class="text-decoration-none">Story</a>
@@ -135,20 +135,20 @@
                     </div>
                     <div class="nav-contact">
                         <div class="nav-icon">
-                            <a id="facebook" href="">
+                            <a id="facebook" href="https://www.facebook.com/AMANKING.taichung/">
                                 <img src="./img/01-頁首/01-Navbar/facebook.svg" alt="">
                             </a>
-                            <a id="line" href="">
+                            <a id="line" href="https://line.me/R/ti/p/%40fno9339m">
                                 <img src="./img/01-頁首/01-Navbar/chat.svg" alt="">
                             </a>
-                            <a id="instagram" href="">
+                            <a id="instagram" href="https://www.instagram.com/amanking22557878/">
                                 <img src="./img/01-頁首/01-Navbar/instagram-sketched.svg" alt="">
                             </a>
                         </div>
                     </div>
                     <!-- 漢堡條 -->
                     <a class="rwd-navbar" href="#"><i class="fas fa-bars rwd-icon" onclick="showNavBar()"></i></a>
-                    
+
                 </div>
             </div>
         </div>
@@ -223,7 +223,7 @@
             <div id="singer" class="row">
                 <div class="col-sm-6 order-1 order-md-0">
                     <div class="campaign-box">
-                        <div class="campaign-text">
+                        <div class="campaign-text" data-aos="fade-left">
                             <div class="text-day">
                                 <h1>08</h1>2020<br>DEM
                             </div>
@@ -241,20 +241,20 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="campaign-pic-box">
+                    <div class="campaign-pic-box" data-aos="fade-right">
                         <img w-md-100 src="./img/03-aman服務/近期活動/b15.jpg" alt="">
                     </div>
                 </div>
             </div>
             <div id="DJ" class="row">
                 <div class="col-md-6">
-                    <div class="campaign-pic-box">
+                    <div class="campaign-pic-box" data-aos="fade-right">
                         <img w-100 src="./img/03-aman服務/近期活動/DJ.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="campaign-box">
-                        <div class="campaign-text">
+                        <div class="campaign-text" data-aos="fade-left">
                             <div class="text-day">
                                 <h1>09</h1>2021<br>JAN
                             </div>
@@ -274,7 +274,7 @@
             <div id="dontworry" class="row">
                 <div class="col-sm-6 order-1 order-md-0">
                     <div class="campaign-box">
-                        <div class="campaign-text">
+                        <div class="campaign-text" data-aos="fade-left">
                             <div class="text-day">
                                 <h1>28</h1>2020<br>Oct
                             </div>
@@ -293,7 +293,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="campaign-pic-box">
+                    <div class="campaign-pic-box" data-aos="fade-right">
                         <img w-100 src="./img/03-aman服務/近期活動/抽菸喝酒食道癌.jpg" alt="">
                     </div>
                 </div>
@@ -783,7 +783,7 @@
                 </div>
             </div>
             <a id="bookingbtn" href="">
-                <button class=" btn" type="submit">BOOKING
+                <button class=" btn animate__animated animate__shakeX animate__delay-5s" type="submit">BOOKING
                     <i class="fas fa-angle-double-right"></i>
                 </button>
             </a>
@@ -919,7 +919,7 @@
 
 
         // 漢堡條顯示的navbar
-        function showNavBar () {
+        function showNavBar() {
             let rwdnav = document.getElementsByClassName('navbar-list')[0]
             if (rwdnav.style.display === 'none') rwdnav.style.display = 'block'
             else rwdnav.style.display = 'none'
