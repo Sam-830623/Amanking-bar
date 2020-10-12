@@ -90,7 +90,29 @@
 
                 <!-- 漢堡條進來的navbar -->
                 <div class="navbar-list">
-
+                    <div class="rwd-nav ">
+                        <!-- display;none控制 裡面放icon-->
+                        <div class="nav-a text-decoration-none">
+                            <a href="#about" class="text-decoration-none"><i>About</i></a>
+                            <a href="#campaign" class="text-decoration-none"><i>Campaign</i></a>
+                            <a href="#menu" class="text-decoration-none"><i>Menu</i></a>
+                            <a href="#story" class="text-decoration-none"><i>Story</i></a>
+                            <a href="#reservation" class="text-decoration-none"><i>Reservation</i></a>
+                        </div>
+                        <div class="nav-contact">
+                            <div class="nav-icon">
+                                <a id="facebook" href="https://www.facebook.com/AMANKING.taichung/">
+                                    <img src="./img/01-頁首/01-Navbar/facebook.svg" alt="fb">
+                                </a>
+                                <a id="line" href="https://line.me/R/ti/p/%40fno9339m">
+                                    <img src="./img/01-頁首/01-Navbar/chat.svg" alt="line">
+                                </a>
+                                <a id="instagram" href="https://www.instagram.com/amanking22557878/">
+                                    <img src="./img/01-頁首/01-Navbar/instagram-sketched.svg" alt="ig">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -126,7 +148,7 @@
                     </div>
                     <!-- 漢堡條 -->
                     <a class="rwd-navbar" href="#"><i class="fas fa-bars rwd-icon" onclick="showNavBar()"></i></a>
-
+                    
                 </div>
             </div>
         </div>
@@ -199,7 +221,7 @@
                 </div>
             </div>
             <div id="singer" class="row">
-                <div class="col-md-6 order-1 order-lg-0">
+                <div class="col-sm-6 order-1 order-md-0">
                     <div class="campaign-box">
                         <div class="campaign-text">
                             <div class="text-day">
@@ -250,7 +272,7 @@
                 </div>
             </div>
             <div id="dontworry" class="row">
-                <div class="col-md-6 order-1 order-lg-0">
+                <div class="col-sm-6 order-1 order-md-0">
                     <div class="campaign-box">
                         <div class="campaign-text">
                             <div class="text-day">
@@ -668,7 +690,7 @@
             </div>
             <div class="content">
                 <div class="row">
-                    <div id="b-52" class="col-md-6">
+                    <div id="b-52" class="col-lg-6">
                         <div class="story-format">
                             <div class="story-content-l ">
                                 <div id="b52-img" class="story-img"></div>
@@ -682,7 +704,7 @@
                             <div class="stroy-content-r">B-52</div>
                         </div>
                     </div>
-                    <div id="sea-breeze" class="col-md-6">
+                    <div id="sea-breeze" class="col-lg-6">
                         <div class="story-format">
                             <div class="story-content-l">
                                 <div id="seabreeze-img" class="story-img"></div>
@@ -699,7 +721,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div id="aviation" class="col-md-6">
+                    <div id="aviation" class="col-lg-6">
                         <div class="story-format">
                             <div class="story-content-l">
                                 <div id="aviation-img" class="story-img"></div>
@@ -714,7 +736,7 @@
                             <div class="stroy-content-r">Aviation</div>
                         </div>
                     </div>
-                    <div id="margarita" class="col-md-6">
+                    <div id="margarita" class="col-lg-6">
                         <div class="story-format">
                             <div class="story-content-l">
                                 <div id="margarita-img" class="story-img"></div>
@@ -798,13 +820,13 @@
                         <li>TIME:21:00-04:00</li>
                     </div>
                     <div class="footer-icon">
-                        <a href="">
+                        <a href="https://www.facebook.com/AMANKING.taichung/">
                             <div id="fb" class="footer-icon"></div>
                         </a>
-                        <a href="">
+                        <a href="https://line.me/R/ti/p/%40fno9339m">
                             <div id="line" class="footer-icon"></div>
                         </a>
-                        <a href="">
+                        <a href="https://www.instagram.com/amanking22557878/">
                             <div id="ig" class="footer-icon"></div>
                         </a>
                         <!-- 解決這排跟fb要magin-left:0 -->
@@ -972,7 +994,7 @@
             breakpoints: {
                 '@0.00': {
                     slidesPerView: 1,
-                    spaceBetween: 10,
+                    spaceBetween: 0,
                 },
                 '@0.75': {
                     slidesPerView: 2,

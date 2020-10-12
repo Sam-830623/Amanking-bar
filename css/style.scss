@@ -25,6 +25,9 @@ body {
             width: 100%;
             height: 100%;
         }
+        @media (max-width: 320px) {
+            overflow: hidden;
+        }
 
         .swiper-container-banner {
             // 原本swiper-container是有over-flow:hidden 但因改名所以要再加 否則會跑出去
@@ -39,7 +42,7 @@ body {
             @media (max-width: 768px) {
                 width: 100%;
             }
-            @media(max-width: 320px){
+            @media (max-width: 320px) {
                 width: 100%;
             }
             position: relative;
@@ -87,14 +90,14 @@ body {
                         position: absolute;
                         left: 70px;
                         bottom: 300px;
-                        font-size: 70px;                     
+                        font-size: 70px;
                         font-weight: 600;
                     }
                     @media (max-width: 320px) {
                         position: absolute;
                         left: 8px;
                         font-size: 45px;
-                        bottom: 150px;
+                        bottom: 240px;
                     }
 
                     .banner-whitetext {
@@ -117,7 +120,7 @@ body {
                             @media (max-width: 768px) {
                                 font-size: 30px;
                             }
-                            @media (max-width:320px) {
+                            @media (max-width: 320px) {
                                 font-size: 25px;
                             }
                         }
@@ -131,10 +134,9 @@ body {
                 z-index: 1234568;
                 position: absolute;
                 bottom: 50px;
-                @media (max-width:768px){
-                    
+                @media (max-width: 768px) {
                 }
-                @media (max-width: width 320px){
+                @media (max-width: width 320px) {
                     padding-right: 26px;
                     padding-bottom: 29px;
                     position: absolute;
@@ -144,7 +146,7 @@ body {
             }
             .swiper-pagination-bullet-active {
                 background-color: #ca603c;
-                @media (max-width:320px){
+                @media (max-width: 320px) {
                     background-color: white;
                 }
             }
@@ -153,20 +155,116 @@ body {
                 width: 12px;
                 height: 12px;
                 background-color: #ca603c;
-                @media (max-width:320px){
+                @media (max-width: 320px) {
                     background-color: white;
                 }
             }
 
             .navbar-list {
                 width: 100%;
-                height: 500px;
+                height: 280px;
                 background-color: rgba(0, 0, 0, 0.6);
                 position: absolute;
                 top: 150px;
                 z-index: 12789;
                 display: none;
-             
+                .rwd-nav {
+                    // width: 100%;
+                    // max-width: calc(100% - 150px);
+                    // margin: auto;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    // justify-content:flex-end;
+                    // @media (max-width: 1500px) {
+                    //     display: none;
+                    // }
+                    // @media (max-width: 1050px) {
+                    // }
+                    .nav-a {
+                        height: 45px;
+                        padding-left: 165px;
+                        display: flex;
+                        font-family: $font-family-all-word;
+                        @media (max-width: 768px) {
+                            padding-left: 130px;
+                            display: unset;
+                        }
+                        @media (max-width: 320px) {
+                            padding-left: 80px;
+                        }
+
+                        a {
+                            width: 152px;
+                            color: $bg_white-color;
+                            // border-width: 152px;
+                            font-size: 28px;
+                            margin-right: 60px;
+                            // position: relative;
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            @media (max-width: 768px) {
+                                padding-bottom: 8px;
+                                margin-right: 95px;
+                            }
+                            @media (max-width: 320px) {
+                                padding-bottom: 3px;
+                                font-size: 24px;
+                                margin-top: 5px;
+                            }
+
+                            // &::after {
+                            //     content: "";
+                            //     display: block;
+                            //     // position: absolute;
+                            //     // left: 0;
+                            //     // bottom: 0;
+                            //     width: 150px;
+                            //     height: 1px;
+                            //     border-bottom: 1px solid white;
+                            //     border-spacing: 10px;
+                            // }
+                        }
+                    }
+                    .nav-contact {
+                        width: 350px;
+                        height: 96px;
+
+                        // background-color: blue;
+                        margin: auto;
+                        display: flex;
+
+                        .nav-icon {
+                            width: 213px;
+                            height: 59px;
+                            display: flex;
+                            // margin: auto;
+                            @media (max-width: 768px) {
+                                margin-top: 180px;
+                            }
+                            @media (max-width: 320px) {
+                                width: 153px;
+                                height: 40px;
+                                margin-left: 55px;
+                            }
+                            #facebook {
+                                @include icon_wh();
+                                margin-right: 12px;
+                            }
+
+                            #line {
+                                @include icon_wh();
+                                margin-right: 20px;
+                            }
+
+                            #instagram {
+                                // @include icon_wh();
+                                width: 55px;
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -193,7 +291,7 @@ body {
                     width: 180px;
                     margin-left: 40px;
                 }
-                @media (max-width:320px){
+                @media (max-width: 320px) {
                     margin-left: 20px;
                     width: 150px;
                 }
@@ -289,7 +387,6 @@ body {
                     }
                 }
                 .rwd-navbar {
-
                     i {
                         // display: flex;
                         // justify-content: flex-end;
@@ -308,7 +405,7 @@ body {
                             bottom: 50px;
                             right: 50px;
                         }
-                        @media (max-width:320px){
+                        @media (max-width: 320px) {
                             position: absolute;
                             right: 20px;
                             bottom: 55px;
@@ -320,7 +417,6 @@ body {
     }
 }
 
-
 .about-content {
     width: 100%;
     height: 1899px;
@@ -328,6 +424,9 @@ body {
     @media (max-width: 1280px) {
         width: 100%;
         height: 100%;
+    }
+    @media(max-width:828px){
+        width: 100%;
     }
 
     .title {
@@ -339,7 +438,7 @@ body {
             margin-bottom: 40px;
             margin-top: 100px;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             margin-top: 70px;
         }
     }
@@ -388,10 +487,7 @@ body {
         @media (max-width: 1280px) {
             width: 100%;
         }
-        @media(max-width:768px){
-            width: 100%;
-        }
-        @media(max-width:320px){
+        @media (max-width: 320px) {
             width: 100%;
         }
         .aman-introduction {
@@ -418,7 +514,7 @@ body {
                 line-height: 28px;
                 width: 100%;
             }
-            @media(max-width:320px){
+            @media (max-width: 320px) {
                 margin: 15px 0;
             }
 
@@ -466,7 +562,7 @@ body {
             margin-bottom: 120px;
         }
 
-        @media (max-width:320px){
+        @media (max-width: 320px) {
             margin-top: 280px;
             margin-bottom: 200px;
         }
@@ -523,11 +619,14 @@ body {
 }
 
 
+
 .campaign-content {
     width: 100%;
     // height: 1850px;
     background-color: $about-content-color;
     position: relative;
+            overflow: hidden;
+
     #campaign-title {
         @include title();
         color: $font-white;
@@ -550,13 +649,16 @@ body {
             position: absolute;
             left: 65px;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 826px) {
+
+        }
+        @media (max-width: 769px) {
             position: absolute;
             margin-top: 20px;
             top: 80px;
             left: 50px;
         }
-        @media(max-width: 320px){
+        @media (max-width: 320px) {
             position: absolute;
             left: 15px;
             margin-top: 40px;
@@ -570,7 +672,7 @@ body {
                 @media (max-width: 1280px) {
                     margin-bottom: 60px;
                 }
-                @media (max-width: 768px) {
+                @media (max-width: 769px) {
                     margin-bottom: 20px;
                 }
             }
@@ -583,7 +685,7 @@ body {
 
             &:last-child {
                 padding-bottom: 115px;
-                @media (max-width: 768px) {
+                @media (max-width: 769px) {
                     padding-bottom: 40px;
                 }
             }
@@ -595,9 +697,12 @@ body {
                     width: 100%;
                     height: 100%;
                 }
-                // 中間950-768之間怎麼辦
-                @media(max-width: 320px){
-                    margin-top: 40px;
+                @media (max-width:828px){
+                    margin-top: 50px;
+                }
+                // 中間950-769之間怎麼辦
+                @media (max-width: 320px) {
+                    margin-top: 50px;
                 }
             }
 
@@ -621,23 +726,27 @@ body {
                     // background-color: aqua;
                     display: flex;
                     position: relative;
-                    @media (max-width:993px){
+                    @media (max-width: 993px) {
                         max-width: 430px;
                     }
-                    @media (max-width:905px){
+                    @media (max-width: 905px) {
                         max-width: 400px;
                     }
-                    @media (max-width:846px) {
-                        max-width: 340px;
-                         display: flex;
-                         flex-wrap: wrap;
-                    }
-                    @media(max-width:768px){
+                    @media (max-width: 846px) {
                         max-width: 340px;
                         display: flex;
                         flex-wrap: wrap;
                     }
-                    @media (max-width:320px){
+                    @media (max-width: 826px) {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                    @media (max-width: 767px) {
+                        max-width: 400px;
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                    @media (max-width: 320px) {
                         max-width: 250px;
                         margin-bottom: 120px;
                     }
@@ -661,13 +770,13 @@ body {
                         position: absolute;
                         top: 15px;
                         left: 0;
-                        @media (max-width:320px){
+                        @media (max-width: 320px) {
                             max-width: 80px;
                         }
 
                         h1 {
                             font-size: 52px;
-                            @media (max-width:320px){
+                            @media (max-width: 320px) {
                                 font-size: 40px;
                             }
                         }
@@ -683,22 +792,34 @@ body {
                         line-height: 25px;
                         padding: 20px;
                         letter-spacing: $lettersapcing2px;
-                        @media (max-width:952px){
+                        @media (max-width: 952px) {
                             max-width: 300px;
                         }
-                        @media (max-width:846px){
+                        @media (max-width: 826px) {
                             display: flex;
-                            flex-wrap: wrap;                           
+                            flex-wrap: wrap;
+                            max-width: 240px;
                         }
-                        @media (max-width:320px){
-                            max-width: 200px;
+                        @media(max-width:767px){
+                            max-width: 400px;
+                        }
+                        @media (max-width: 320px) {
+                            max-width: 190px;
                             margin-bottom: 50px;
                         }
 
-
                         a {
                             color: $font-white;
-                            @media(max-width: 320px){
+                            @media(max-width:826px){
+                                display: none;
+                            }
+                            @media(max-width:826px){
+                                display: none;
+                            }
+                            @media(max-width:767px){
+                                display: inline;
+                            }
+                            @media (max-width: 320px) {
                                 display: none;
                             }
                         }
@@ -718,7 +839,6 @@ body {
     }
 }
 
-
 .menu {
     width: 100%;
     // height: 1600px;
@@ -731,14 +851,14 @@ body {
         @media (max-width: 768px) {
             padding: 60px 40px 60px;
         }
-        @media(max-width: 320px){
+        @media (max-width: 320px) {
             padding: 60px 0 60px;
         }
     }
     .menu-list-subtitle {
         position: relative;
         padding: 0 80px;
-        @media (max-width:320px){
+        @media (max-width: 320px) {
             padding: 0;
         }
         img {
@@ -747,8 +867,8 @@ body {
             position: absolute;
             top: -40px;
             @media (max-width: 320px) {
-               position: absolute;
-               right: 0;
+                position: absolute;
+                right: 0;
             }
         }
         .subtitle-text {
@@ -761,8 +881,8 @@ body {
             padding-left: 95px;
             font-weight: 600;
             @media (max-width: 320px) {
-               padding: 0;
-               border-spacing: 20px;
+                padding: 0;
+                border-spacing: 20px;
             }
         }
     }
@@ -777,7 +897,7 @@ body {
             // #gin:hover{
             //     background-image: url(../img/04-aman-menu/01-主要的表格餐酒種類/gin.png);
             // }
-            @media(max-width:320px){
+            @media (max-width: 320px) {
                 padding: 0 20px;
             }
             h3 {
@@ -788,7 +908,6 @@ body {
 
                 //讓線可以縮短
                 margin-right: 30px;
-                
             }
             li {
                 font-size: 24px;
@@ -809,7 +928,7 @@ body {
             padding: 134px 80px 0;
             // margin: auto;
             @media (max-width: 320px) {
-               padding: 134px 20px 0;
+                padding: 134px 20px 0;
             }
 
             img {
@@ -823,7 +942,7 @@ body {
                 @media (max-width: 320px) {
                     position: absolute;
                     right: 5px;
-                    top:-10px;
+                    top: -10px;
                 }
             }
             .otherdrinks-title {
@@ -863,7 +982,6 @@ body {
     }
 }
 
-
 .menu-swiper-content {
     width: 100%;
     // height: 1020px;
@@ -871,7 +989,7 @@ body {
     @media (max-width: 1280px) {
         width: 100%;
     }
-    
+
     .menu-swiper-title {
         color: #182326;
         @include title();
@@ -919,7 +1037,7 @@ body {
             width: 100%;
             height: 100%;
         }
-  
+
         .swiper-container {
             width: 100%;
             height: 100%;
@@ -947,7 +1065,7 @@ body {
             .swiper-wrapper {
                 width: 100%;
                 height: 90%;
-                @media (max-width:995px){
+                @media (max-width: 995px) {
                     // overflow: hidden;
                 }
                 .swiper-slide {
@@ -963,7 +1081,7 @@ body {
                     @media (max-width: 768px) {
                         width: 100%;
                     }
-                    @media (max-width:695px){
+                    @media (max-width: 695px) {
                         padding-bottom: 50px;
                     }
                     color: white;
@@ -988,7 +1106,7 @@ body {
                                 top: 0;
                                 left: 120px;
                             }
-                            @media (max-width:695px){
+                            @media (max-width: 695px) {
                                 position: absolute;
                                 top: 120px;
                             }
@@ -1131,31 +1249,29 @@ body {
                             padding: 70px 20px 0 20px;
                             font-family: $font-family-all-word;
                             text-align: left;
-                            @media (max-width:1380px) {
+                            @media (max-width: 1380px) {
                                 padding: 75px 10px 0 50px;
                             }
-                            @media (max-width:768px) {
+                            @media (max-width: 768px) {
                                 padding: 75px 10px 0 30px;
                             }
-                            @media (max-width:695px) {
+                            @media (max-width: 695px) {
                                 padding: 55px 30px 0 320px;
                             }
-                            @media (max-width:535px){
+                            @media (max-width: 535px) {
                                 padding: 50px 30px 0 250px;
                             }
                             @media (max-width: 320px) {
                                 padding: 45px 30px 0 148px;
-
                             }
                         }
                     }
                     .old-number {
                         //看看能不能不用margin 用align
                         margin-top: 120px;
-
                     }
-                    .even-content{
-                        @media (max-width:695px){
+                    .even-content {
+                        @media (max-width: 695px) {
                             margin-top: 120px;
                         }
                     }
@@ -1172,19 +1288,19 @@ body {
     width: 100%;
     // height: 2065px;
     background-color: #07707f;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         width: 100%;
     }
-    // @media (max-width: 320px) {
-    //     width: 100%;
-    // }
+    @media (max-width: 320px) {
+        width: 100%;
+    }
     .container {
-        // @media (max-width: 768px) {
-        //     width: 100%;
-        // }
-        // @media (max-width: 320px) {
-        //     width: 100%;
-        // }
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+        @media (max-width: 320px) {
+            width: 100%;
+        }
         .en-title {
             color: $font-white;
             @include title();
@@ -1196,13 +1312,19 @@ body {
             @media (max-width: 1280px) {
                 padding-bottom: 60px;
             }
+            @media (max-width: 320px) {
+                padding-left: 15px;
+            }
         }
         .content {
             widows: 100%;
             // height: 1703px;
             // background-color: black;
-            @media (max-width: 768px) {
+            @media (max-width: 769) {
                 width: 100%;
+            }
+            @media (max-width: 320px) {
+                // width: 50%;
             }
 
             #b-52 {
@@ -1210,11 +1332,17 @@ body {
                 @media (max-width: 1280px) {
                     padding: 0 0 15px;
                 }
+                @media (max-width: 992px) {
+                    margin: auto;
+                }
                 @media (max-width: 768px) {
                     display: flex;
-                    
+                    margin-left: 120px;
                     padding: 0 0 60px;
                     // justify-content: flex-start;
+                }
+                @media (max-width:320px){
+                    margin-left: 0;
                 }
             }
             #sea-breeze {
@@ -1223,15 +1351,19 @@ body {
                 @media (max-width: 1280px) {
                     justify-content: unset;
                 }
-                //1140-768之間問題如何解決
+                //1140-767之間問題如何解決
                 @media (max-width: 1140px) {
-                    
                 }
                 @media (max-width: 768px) {
                     padding-bottom: 20px;
                     display: flex;
                     flex-wrap: wrap;
                     overflow: hidden;
+                    margin-left: 105px;
+                }
+                @media (max-width: 320px) {
+                    padding-left: 0;
+                    margin-left: 0;
                 }
             }
             #aviation {
@@ -1241,6 +1373,10 @@ body {
                 }
                 @media (max-width: 768px) {
                     padding: 55px 0 20px;
+                    margin-left: 120px;
+                }
+                @media (max-width:320px){
+                    margin-left: 0;
                 }
             }
             #margarita {
@@ -1252,6 +1388,10 @@ body {
                 }
                 @media (max-width: 768px) {
                     padding: 55px 0 120px;
+                    margin-left: 120px;
+                }
+                @media (max-width:320px){
+                    margin-left: 0;
                 }
             }
 
@@ -1260,23 +1400,26 @@ body {
                 height: 714px;
                 // background-color:white;
                 display: flex;
-                @media (max-width:850px){
+                @media (max-width: 850px) {
                     overflow: visible;
                 }
-                @media (max-width: 768px) {
-                    display: unset;
+                @media (max-width: 767px) {
+                    // display: unset;
+                }
+                @media (max-width: 320px) {
+                    max-width: 300px;
                 }
 
                 .story-content-l {
                     position: relative;
                     display: flex;
-                    @media (max-width:992px){
-                       
+                    @media (max-width: 992px) {
                         flex-wrap: wrap;
                     }
-                    @media (max-width:850px){
+                    @media (max-width: 850px) {
                         overflow: visible;
                     }
+           
 
                     .story-img {
                         width: 455px;
@@ -1286,11 +1429,14 @@ body {
                         background-size: cover;
                         opacity: 0.7;
                         transition: 2s;
-                        @media (max-width:960px){
-                            width: 400px;
+                        @media (max-width: 960px) {
+                            width: 420px;
                         }
-                        @media (max-width:768px){
-                            width: 455px;
+                        @media (max-width: 767px) {
+                            max-width: 380px;
+                        }
+                        @media (max-width: 320px) {
+                            max-width: 300px;
                         }
                         &:hover {
                             opacity: 1;
@@ -1313,22 +1459,29 @@ body {
                         right: -50px;
                         padding: 29.5px 33.5px;
                         line-height: 25px;
-                        @media (max-width:1063px){
+                        @media (max-width: 1063px) {
                             position: absolute;
                             bottom: -40px;
                             right: 0;
                         }
-                        @media (max-width:992px){
+                        @media (max-width: 992px) {
                             overflow: visible;
                         }
-                        @media (max-width:850px){
+                        @media (max-width: 850px) {
                             overflow: visible;
                         }
-                        @media (max-width: 768px) {
+                        @media (max-width: 767px) {
                             position: absolute;
                             bottom: 0px;
-                            right: 0;
+                            left: 0;
+                            max-width: 300px;
                             // background-color: #;
+                        }
+                        @media (max-width: 320px) {
+                            max-width: 300px;
+                            padding: 15px 20px;
+                            position: absolute;
+                            right: 0;
                         }
                         h4 {
                             padding-bottom: 10px;
@@ -1352,14 +1505,19 @@ body {
                     // 直的字
                     writing-mode: vertical-lr;
                     font-family: "EB Garamond", serif;
-                    @media (max-width:1200px) {
-                        display: none;
+                    @media (max-width: 1200px) {
+                        // display: none;
                     }
-                    @media (max-width: 768px) {
-                        writing-mode: horizontal-tb;
+                    @media (max-width: 767px) {
                         letter-spacing: 2px;
                         padding-top: 35px;
                         display: inline;
+                    }
+                    @media (max-width: 320px) {
+                        padding-top: 10px;
+                        padding-left: 10px;
+                        writing-mode: horizontal-tb;
+                        display: none;
                     }
                 }
             }
@@ -1376,7 +1534,7 @@ body {
     @media (max-width: 900px) {
         width: 100%;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 768) {
         width: 100%;
     }
     @media (max-width: 320px) {
@@ -1431,6 +1589,14 @@ body {
                 left: 0;
                 top: 140px;
             }
+            @media (max-width: 320px) {
+                max-width: 303px;
+                height: 710px;
+                background-color: rgba(255, 255, 255, 0.65);
+                position: absolute;
+                top: 120px;
+                padding: 50px 30px 20px;
+            }
 
             .title {
                 @include title();
@@ -1441,6 +1607,9 @@ body {
                     list-style-type: none;
                     @media (max-width: 768px) {
                         font-size: 16px;
+                    }
+                    @media (max-width: 768px) {
+                        font-size: 14px;
                     }
                 }
                 .attention {
@@ -1497,6 +1666,12 @@ body {
                     left: 72px;
                     top: 800px;
                 }
+                @media (max-width: 320px) {
+                    width: 265px;
+                    position: absolute;
+                    left: 15px;
+                    top: 810px;
+                }
                 i {
                     color: $font-white;
                     font-size: 55px;
@@ -1536,7 +1711,7 @@ body {
         }
         @media (max-width: 320px) {
             width: 100%;
-            margin: auto;
+            margin-top: 45px;
         }
 
         li {
@@ -1569,6 +1744,10 @@ body {
             @media (max-width: 576px) {
                 margin: 0 60px 20px 60px;
             }
+            @media (max-width: 320px) {
+                margin: 0 20px 20px 10px;
+                font-size: 15px;
+            }
         }
         .footer-icon {
             width: 38px;
@@ -1579,12 +1758,20 @@ body {
             @media (max-width: 576px) {
                 margin-bottom: 45px;
             }
+            @media (max-width: 320px) {
+                width: 28px;
+                height: 28px;
+                margin-right: 5px;
+            }
         }
         #fb {
             background-image: url("../img/07-頁尾/01-餐廳資訊/facebook.svg");
             margin-right: 5px;
             @media (max-width: 576px) {
                 margin-left: 50px;
+            }
+            @media (max-width: 375px) {
+                margin-left: 5px;
             }
         }
         #line {
@@ -1604,6 +1791,10 @@ body {
             padding-left: 30px;
             @media (max-width: 576px) {
                 padding-left: 20px;
+            }
+            @media (max-width: 320px) {
+                padding-left: 0;
+                max-width: 180px;
             }
             li {
                 width: 214px;
@@ -1633,6 +1824,9 @@ body {
             display: inline;
             margin-top: 0;
         }
+        @media (max-width: 375px) {
+            display: none;
+        }
     }
 
     img {
@@ -1648,9 +1842,8 @@ body {
             line-height: 100px;
         }
         @media (max-width: 320px) {
-            width: 30px;
-            height: 30px;
-            line-height: 90px;
+            width: 50px;
+            height: 50px;
         }
     }
     @media (max-width: 1280px) {
@@ -1666,11 +1859,10 @@ body {
         width: 100%;
         font-size: 20px;
     }
-    @media (max-width: width 320px) {
-        font-size: 10px;
+    @media (max-width: 320px) {
+        font-size: 18px;
     }
 }
-
 
 //gogotop
 .bar-icon {
@@ -1730,6 +1922,4 @@ body {
 //6.320px檢查重新使用到正確
 //7.利用js動畫製作 或其他動畫效果
 
-
 // 問是不是只能寫1280px 768px 320px 這樣 還是說可以依照自己覺得哪裡奇怪然後修改成自己要的數字 ex:695px之類的
-
