@@ -692,6 +692,11 @@ body {
   margin-left: auto;
 }
 
+.about-content .aman-about .aman-picture img {
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 1280px) {
   .about-content .aman-about .aman-picture {
     width: 100%;
@@ -728,14 +733,14 @@ body {
   }
 }
 
-.about-content .aman-idea img {
+.about-content .aman-idea .aman-picture img {
   width: 870px;
   height: 553px;
   margin-bottom: 340px;
 }
 
 @media (max-width: 1280px) {
-  .about-content .aman-idea img {
+  .about-content .aman-idea .aman-picture img {
     width: 100%;
     height: 100%;
     margin-bottom: 260px;
@@ -1891,6 +1896,12 @@ body {
   }
 }
 
+@media (max-width: 580px) {
+  .story .container .content #b-52 {
+    margin-left: 40px;
+  }
+}
+
 @media (max-width: 375px) {
   .story .container .content #b-52 {
     margin-left: 0;
@@ -1933,6 +1944,12 @@ body {
   }
 }
 
+@media (max-width: 580px) {
+  .story .container .content #sea-breeze {
+    margin-left: 40px;
+  }
+}
+
 @media (max-width: 375px) {
   .story .container .content #sea-breeze {
     margin-left: 0;
@@ -1961,6 +1978,12 @@ body {
   .story .container .content #aviation {
     padding: 55px 0 20px;
     margin-left: 120px;
+  }
+}
+
+@media (max-width: 580px) {
+  .story .container .content #aviation {
+    margin-left: 40px;
   }
 }
 
@@ -1998,6 +2021,12 @@ body {
   .story .container .content #margarita {
     padding: 55px 0 120px;
     margin-left: 120px;
+  }
+}
+
+@media (max-width: 580px) {
+  .story .container .content #margarita {
+    margin-left: 40px;
   }
 }
 
@@ -2636,6 +2665,13 @@ body {
 @media (max-width: 375px) {
   .footer #footer-information .copyright {
     max-width: 170px;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .footer #footer-information .copyright {
+    max-width: 180px;
     padding-left: 0;
   }
 }
