@@ -124,7 +124,7 @@ body {
   .header .banner .swiper-container-banner .swiper-slide .banner-text {
     position: absolute;
     left: 20px;
-    font-size: 58px;
+    font-size: 52px;
   }
 }
 
@@ -133,7 +133,7 @@ body {
     position: absolute;
     left: 8px;
     font-size: 45px;
-    bottom: 240px;
+    bottom: 260px;
   }
 }
 
@@ -151,6 +151,12 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .header .banner .swiper-container-banner .swiper-slide .banner-text .banner-whitetext {
+    font-size: 38px;
+  }
+}
+
 @media (max-width: 320px) {
   .header .banner .swiper-container-banner .swiper-slide .banner-text .banner-whitetext {
     font-size: 35px;
@@ -165,6 +171,12 @@ body {
 @media (max-width: 768px) {
   .header .banner .swiper-container-banner .swiper-slide .banner-text .banner-whitetext #yesorno {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header .banner .swiper-container-banner .swiper-slide .banner-text .banner-whitetext #yesorno {
+    font-size: 28px;
   }
 }
 
@@ -252,6 +264,12 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .header .banner .swiper-container-banner .navbar-list .rwd-nav .nav-a {
+    padding-left: 60px;
+  }
+}
+
 @media (max-width: 320px) {
   .header .banner .swiper-container-banner .navbar-list .rwd-nav .nav-a {
     padding-left: 80px;
@@ -305,6 +323,14 @@ body {
 @media (max-width: 768px) {
   .header .banner .swiper-container-banner .navbar-list .rwd-nav .nav-contact .nav-icon {
     margin-top: 180px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header .banner .swiper-container-banner .navbar-list .rwd-nav .nav-contact .nav-icon {
+    width: 120px;
+    height: 40px;
+    margin-left: 190px;
   }
 }
 
@@ -825,6 +851,13 @@ body {
     margin-top: 20px;
     top: 80px;
     left: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .campaign-content #campaign-title {
+    position: absolute;
+    left: 15px;
   }
 }
 
@@ -1391,6 +1424,12 @@ body {
   }
 }
 
+@media (max-width: 420px) {
+  .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide {
+    width: 100%;
+  }
+}
+
 @media (max-width: 695px) {
   .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide {
     padding-bottom: 50px;
@@ -1437,6 +1476,13 @@ body {
   }
 }
 
+@media (max-width: 420px) {
+  .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content .evennumber-img {
+    position: absolute;
+    left: 90px;
+  }
+}
+
 @media (max-width: 320px) {
   .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content .evennumber-img {
     position: absolute;
@@ -1461,6 +1507,13 @@ body {
   }
 }
 
+@media (max-width: 420px) {
+  .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content .oldnumber-img {
+    position: absolute;
+    left: 90px;
+  }
+}
+
 @media (max-width: 320px) {
   .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content .oldnumber-img {
     position: absolute;
@@ -1479,6 +1532,13 @@ body {
   .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content #manhattan {
     position: absolute;
     left: 100px;
+  }
+}
+
+@media (max-width: 420px) {
+  .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content #manhattan {
+    position: absolute;
+    left: 50px;
   }
 }
 
@@ -1504,6 +1564,13 @@ body {
   }
 }
 
+@media (max-width: 420px) {
+  .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content #bloodymary {
+    position: absolute;
+    left: 65px;
+  }
+}
+
 @media (max-width: 320px) {
   .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content #bloodymary {
     position: absolute;
@@ -1522,6 +1589,13 @@ body {
   .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content #mintjulep {
     position: absolute;
     left: 130px;
+  }
+}
+
+@media (max-width: 420px) {
+  .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content #mintjulep {
+    position: absolute;
+    left: 90px;
   }
 }
 
@@ -1546,6 +1620,13 @@ body {
   }
 }
 
+@media (max-width: 420px) {
+  .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content #sunrise {
+    position: absolute;
+    left: 75px;
+  }
+}
+
 @media (max-width: 320px) {
   .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content #sunrise {
     position: absolute;
@@ -1564,6 +1645,13 @@ body {
   .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content #matador {
     position: absolute;
     left: 115px;
+  }
+}
+
+@media (max-width: 420px) {
+  .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content #matador {
+    position: absolute;
+    left: 90px;
   }
 }
 
@@ -1588,6 +1676,13 @@ body {
   }
 }
 
+@media (max-width: 420px) {
+  .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content #redbull {
+    position: absolute;
+    left: 90px;
+  }
+}
+
 @media (max-width: 320px) {
   .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content #redbull {
     position: absolute;
@@ -1608,6 +1703,14 @@ body {
   .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content #corona {
     position: absolute;
     left: 150px;
+  }
+}
+
+@media (max-width: 420px) {
+  .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content #tw18beer,
+  .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content #corona {
+    position: absolute;
+    left: 90px;
   }
 }
 
@@ -1656,6 +1759,12 @@ body {
 @media (max-width: 535px) {
   .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content .swiper-bluebox {
     padding: 50px 30px 0 250px;
+  }
+}
+
+@media (max-width: 420px) {
+  .menu-swiper-content .menu-swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-content .swiper-bluebox {
+    padding: 62px 30px 0 160px;
   }
 }
 
@@ -2213,7 +2322,10 @@ body {
 @media (max-width: 375px) {
   .reservation .reservation-pic .reservation-textbox {
     max-width: 358px;
-    height: 690px;
+    height: 750px;
+    position: absolute;
+    top: 80px;
+    padding: 50px 20px 20px;
   }
 }
 
@@ -2329,6 +2441,15 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .reservation .reservation-pic #bookingbtn button {
+    position: absolute;
+    width: 265px;
+    top: 820px;
+    left: 50px;
+  }
+}
+
 @media (max-width: 320px) {
   .reservation .reservation-pic #bookingbtn button {
     width: 265px;
@@ -2423,6 +2544,19 @@ body {
   }
 }
 
+@media (max-width: 450px) {
+  .footer #footer-information .footer-contact {
+    font-size: 17px;
+    margin: 0 15px 20px 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer #footer-information .footer-contact {
+    max-width: 310px;
+  }
+}
+
 @media (max-width: 320px) {
   .footer #footer-information .footer-contact {
     margin: 0 20px 20px 10px;
@@ -2499,9 +2633,15 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .footer #footer-information .copyright {
+    max-width: 170px;
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 320px) {
   .footer #footer-information .copyright {
-    padding-left: 0;
     max-width: 180px;
   }
 }
