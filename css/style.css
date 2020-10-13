@@ -733,14 +733,14 @@ body {
   }
 }
 
-.about-content .aman-idea .aman-picture img {
+.about-content .aman-idea img {
   width: 870px;
   height: 553px;
   margin-bottom: 340px;
 }
 
 @media (max-width: 1280px) {
-  .about-content .aman-idea .aman-picture img {
+  .about-content .aman-idea img {
     width: 100%;
     height: 100%;
     margin-bottom: 260px;
