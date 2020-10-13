@@ -733,17 +733,24 @@ body {
   }
 }
 
-.about-content .aman-idea .aman-picture img {
+.about-content .aman-idea img {
   width: 870px;
   height: 553px;
   margin-bottom: 340px;
 }
 
 @media (max-width: 1280px) {
-  .about-content .aman-idea .aman-picture img {
+  .about-content .aman-idea img {
     width: 100%;
     height: 100%;
     margin-bottom: 260px;
+    margin-top: 20;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-content .aman-idea img {
+    width: 100%;
   }
 }
 
@@ -753,10 +760,9 @@ body {
   background-color: #144c59;
   color: white;
   position: absolute;
-  bottom: -90px;
+  bottom: 30px;
   right: 0;
   padding: 70px;
-  margin-bottom: 200px;
   font-size: 18px;
   line-height: 32px;
 }
@@ -768,16 +774,15 @@ body {
     background-color: unset;
     font-weight: 700;
     padding: 0;
-    margin-bottom: 180px;
     position: absolute;
-    bottom: -320px;
+    bottom: -150px;
     right: 0;
   }
 }
 
 @media (max-width: 375px) {
   .about-content .aman-idea .aman-idea-text {
-    margin-bottom: 200px;
+    margin-bottom: 30px;
   }
 }
 
